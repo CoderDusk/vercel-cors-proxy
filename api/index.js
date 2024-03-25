@@ -27,7 +27,7 @@ const handler = async (req, res) => {
       },
     });
 
-    res.setHeader("Content-Type", "text/html; charset=utf-8");
+    // res.setHeader("Content-Type", "text/html; charset=utf-8");
     micro.send(res, response.status, response.data);
   } catch (error) {
     console.error("Error fetching URL:", error.message, error.config);
